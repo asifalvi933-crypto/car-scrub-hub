@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function CarScrapBlogHome() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // 👉 APNA WHATSAPP NUMBER YAHAN REPLACE KAREIN (91 ke baad 10 digit number)
+  // Direct WhatsApp Number Integration
   const whatsappNumber = "916395948240"; 
   const defaultWhatsAppUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
 
