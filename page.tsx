@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function CarScrapBlogHome() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Direct WhatsApp Number Integration
+  // Direct Correct WhatsApp Number Integration
   const whatsappNumber = "916395948240"; 
   const defaultWhatsAppUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
 
@@ -116,7 +116,7 @@ export default function CarScrapBlogHome() {
           </div>
         </section>
 
-        {/* Product & Article Cards */}
+        {/* Product Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.map((post) => {
             const itemWhatsAppUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi, I am interested in: ${post.title} (${post.price}). Is it available?`)}`;
