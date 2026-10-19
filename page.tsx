@@ -6,8 +6,8 @@ export default function CarScrapBlogHome() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Direct Correct WhatsApp Number Integration
-  const whatsappNumber = "916395948240"; 
-  const defaultWhatsAppUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
+  const whatsappNumber = "916395948240";
+const defaultWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
 
   const categories = ['All', 'Engine & Transmission', 'Body Parts', 'Lights & Electrical', 'Suspension'];
 
