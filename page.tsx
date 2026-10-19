@@ -5,9 +5,9 @@ import React, { useState } from 'react';
 export default function CarScrapBlogHome() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Direct Correct WhatsApp Number Integration
-  const whatsappNumber = "916395948240";
-const defaultWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
+  // Direct WhatsApp API Link Integration
+  const whatsappNumber = "916395948240"; 
+  const defaultWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
 
   const categories = ['All', 'Engine & Transmission', 'Body Parts', 'Lights & Electrical', 'Suspension'];
 
@@ -119,7 +119,7 @@ const defaultWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber
         {/* Product Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.map((post) => {
-            const itemWhatsAppUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi, I am interested in: ${post.title} (${post.price}). Is it available?`)}`;
+            const itemWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(`Hi, I am interested in: ${post.title} (${post.price}). Is it available?`)}`;
             return (
               <article key={post.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
                 <div>
